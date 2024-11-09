@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Sentiment Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h1>Sentiment Analysis</h1>
+            <p>Enter a text below or upload an image, then select a language to predict its sentiment.</p>
+            
+            <form action="/predict" method="post" class="form" enctype="multipart/form-data">
+                <label for="text">Text Input:</label>
+                <textarea name="text" id="text" rows="4" placeholder="Type your text here..."></textarea>
+                
+                <label for="lang">Choose Language:</label>
+                <select name="lang" id="lang">
+                    <option value="english">English</option>
+                    <option value="hindi">Hindi</option>
+                </select>
+                
+                <button type="submit">Analyze Sentiment</button>
+            </form>
+        </div>
 
+        <!-- Credits Section at the Bottom -->
+        <div class="show">
+            <p id="text">Developed by <span id="element"></span></p>
+        </div>
+    </div>
+</body>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+        strings: ['Vaibhav Sharma (22BCS12459)', 'Devansh Sehgal (22BCS15663)','Bhuvnesh Gautam (22BCS14059)','Nishant (22BCS15009)', 'Arundhati (22BCS15647)'],
+        typeSpeed: 30,
+        loop: true,
+    });
+</script>
+</html>
