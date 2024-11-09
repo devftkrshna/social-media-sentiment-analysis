@@ -1,1 +1,133 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Prevent Scrolling */
+body, html {
+    overflow: hidden; /* Prevent scrolling */
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f2f5;
+    color: #333;
+}
+
+/* Main Container - Full Viewport Height with Padding */
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 20px 0; /* Space at top and bottom */
+}
+
+/* Form Container */
+.container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Adjust width to fit content */
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 1.8em; /* Smaller font to fit in one screen */
+    color: #007BFF;
+    margin-bottom: 0.5rem;
+}
+
+/* Description */
+p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+/* Form Styling */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; /* Disable resizing */
+    font-size: 1em;
+    color: #333;
+    background: #f9f9f9;
+}
+
+/* File Upload Input */
+input[type="file"] {
+    padding: 8px;
+    font-size: 0.9em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+/* Dropdown Select */
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+/* Button Styling */
+button {
+    padding: 10px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Credits Section at the Bottom */
+.show {
+    text-align: center;
+    margin-top: auto;
+    font-size: 0.9em; /* Reduce font size for credits */
+    color: #333;
+    padding-top: 1rem;
+}
+
+/* Animated Text Styling */
+#element {
+    color: #007BFF;
+    font-weight: bold;
+}
