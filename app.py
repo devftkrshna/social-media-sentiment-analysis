@@ -19,7 +19,7 @@ with open('bow_vectorizer_hindi.pkl', 'rb') as f:
     bow_vectorizer_hindi = pickle.load(f)
 
 # Configure Tesseract path if needed
-pytesseract.pytesseract.tesseract_cmd = r'"C:/Program Files/Tesseract-OCR/tesseract.exe"'
+
 
 UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
